@@ -1,0 +1,75 @@
+.work{
+    padding: 0 3rem;
+    display: flex;
+    height: 90vh;
+    position: relative;
+}
+.w-right{
+    flex: 1;
+    position: relative;
+}
+.w-mainCircle{
+    left: 9rem;
+    top: 2rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    background-color: white;
+}
+.w-mainCircle>*{
+position: absolute;
+}
+.w-mainCircle> :nth-child(1){
+    top:-3rem;
+    left:6rem;
+}
+.w-mainCircle> :nth-child(2){
+    top:5rem;
+    left:-3rem;
+}
+.w-mainCircle> :nth-child(3){
+    top:5rem;
+    left:6rem;
+}
+.w-mainCircle> :nth-child(4){
+    top:5rem;
+    left:15rem;
+}
+.w-mainCircle> :nth-child(5){
+    top:13rem;
+    left:6rem;
+}
+.w-secCircle{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    box-shadow: var(--smboxShadow);
+}
+.w-secCircle>img{
+    transform: scale(0.6);
+}
+.w-backCircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+.blueCircle{
+    background-color: blue;
+    left:18rem;
+    top:0rem;
+}
+.yellowCircle{
+    background-color: var(--orange);
+    left:18rem;
+    top:8rem;
+}
