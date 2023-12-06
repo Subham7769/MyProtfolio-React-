@@ -1,13 +1,13 @@
 import React from 'react'
 import './Testimonial.css'
 import {Swiper,SwiperSlide} from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/pagination';
 import profilePic1 from '../../img/profile1.jpg'
 import profilePic2 from '../../img/profile2.jpg'
 import profilePic3 from '../../img/profile3.jpg'
 import profilePic4 from '../../img/profile4.jpg'
-import { Pagination } from 'swiper/modules';
-import 'swiper/css/pagination';
 
 
 
@@ -54,7 +54,13 @@ const Testimonial = () => {
         <Swiper
         modules={[Pagination]}
         slidesPerView={1}
-        pagination={{clickable:true}}>
+        pagination={{clickable:true}}
+        autoplay={
+          {
+            delay:2500,
+            disableOnInteraction:false,
+          }
+        }>
             {
                 clients.map((clients,index)=>{
                     return(

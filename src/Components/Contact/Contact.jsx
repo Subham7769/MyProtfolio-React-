@@ -1,20 +1,23 @@
 import React from 'react'
 import './Contact.css'
-import { useRef } from 'react';
+import { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+export const ContactUs = () => {
+    const [success, setSuccess] = useState(false);
 
     const form = useRef();
-
+  
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_hnyaphj', 'template_0kwgw6w', form.current, 'XPZA61xqs8f7Tzqtx')
+      emailjs.sendForm('service_hnyaphj', 'template_v3j2oeu', form.current, 'SiTh0VBlUPAmbVEge')
         .then((result) => {
             console.log(result.text);
+            setSuccess(true);
         }, (error) => {
             console.log(error.text);
+            setSuccess(false);
         });
     };
   
@@ -37,13 +40,14 @@ const Contact = () => {
                 <input type="text" name="user_name" placeholder="Name" className='user'/>
                 <input type="email" name="user_email" placeholder="Email" className='user'/>
                 <textarea name="message" placeholder='Message' className='user'></textarea>
-                <input type="submit" value="Send"  className='button'/>
+                <input type="submit" value={success ?  "Sent"  : "Send" } style={success ? { background: 'green' } : {}} className='button'/>
+                {success && <span>Thanks for contacting me!</span>}
                 {/* blur divs */}
-                <div className="blur" style={{background:'var(--purple)',left:'6%',top:'10%'}}></div>
+                <div className="blur" style={{backgroundColor:'var(--purple)',left:'6%',top:'10%'}}></div>
             </form>
         </div>
     </div>
   )
 }
 
-export default Contact
+export default ContactUs

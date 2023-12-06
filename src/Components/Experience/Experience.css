@@ -1,17 +1,19 @@
-.experience{
+.experience {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     gap: 5rem;
     height: 30vh;
     margin-bottom: 8rem;
 }
-.achievement{
+
+.achievement {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.circle{
+
+.circle {
     width: 4rem;
     height: 4rem;
     background-color: white;
@@ -23,20 +25,22 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    color: var(--text);
 }
-.circle::before{
-border-radius: 100%;
-content: '';
-background-image: linear-gradient(to bottom, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 
-top: -8px;
-left: -8px;
-bottom: -8px;
-right: -8px;
-position: absolute;
-z-index: -1;
-box-shadow: var(--boxShadow);
+.circle::before {
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: var(--boxShadow);
 }
-.achievement>span:nth-of-type(2){
+
+.achievement>span:nth-of-type(2) {
     color: var(--orange);
 }

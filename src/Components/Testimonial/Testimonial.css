@@ -33,7 +33,7 @@
     width: 30rem;
     height: 12rem;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.26);
+    background: var(--cardBg);
     border: 0.5rem solid var(--blueCard);
     border-radius: 1.25rem;
     box-shadow: var(--boxShadow);
@@ -60,5 +60,8 @@
 }
 
 .t-wrapper .swiper-pagination-bullet-active{
+    background: var(--orange);
+}
+.t-wrapper .swiper-pagination-bullet{
     background: var(--orange);
 }

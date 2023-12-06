@@ -9,12 +9,45 @@
     --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
     --orangeCard: rgba(252, 166, 31, 0.45);
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
-}
+    --cardBg:rgba(255, 255, 255, 0.26);
+    --text:black;
+    --bgColor:white;
 
+}
+.light{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --cardBg:rgba(255, 255, 255, 0.26);
+    --text:black;
+    --bgColor:transparent;
+}
+.dark{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #f7f7f8;
+    --gray : #dedfe3;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --cardBg:rgba(255, 255, 255, 0.26);
+    --text:rgb(0, 0, 0, 255);
+    --bgColor:black;
+}
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);    
+    color: var(--black);
+    background-color: var(--bgColor); 
+ 
 }
 
 .button{
@@ -33,6 +66,13 @@
   border: 1px solid var(--orange);
 }
 
-  
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  filter: blur(72px);
+  z-index:-9;
+}  
 
   

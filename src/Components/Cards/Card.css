@@ -12,7 +12,7 @@
     width: 10rem;
     height: 13rem;
     position: absolute;
-    background: rgba(255, 255, 255, 0.32);
+    background: var(--cardBg);
     box-shadow: var(--boxShadow);
 }
 
