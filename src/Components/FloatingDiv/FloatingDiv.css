@@ -11,12 +11,12 @@
 }
 
 .floatingdiv img{
-    transform: scale(0.4);
+    transform: scale(0.3);
 }
 
 .floatingdiv span{
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .FloatingDivUpper{
@@ -30,9 +30,8 @@
 
 @media screen and (max-width: 768px) {
     .floatingdiv{
-        height: 3.5rem;
-        padding: 0px 0.5rem 0px 0px;
-        color: var(--text);
+        height: 3rem;
+        padding: 0px 0.4rem 0px 0px;
     }
     
     .floatingdiv img{
