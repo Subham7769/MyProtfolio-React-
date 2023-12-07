@@ -45,11 +45,10 @@ const Testimonial = () => {
             <span>Clients Always get </span>
             <span>Exceptional Work</span>
             <span> from me...</span>
+            
             {/* blur divs */}
         <div className="blur" style={{background:'var(--purple)',left:'6%',top:'10%'}}></div>
         <div className="blur" style={{background:'skyblue',left:'66%',top:'56%'}}></div>
-        
-
         </div>
         
         {/* slider */}

@@ -27,7 +27,8 @@
 }
 
 .testimonial {
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
     padding: 2rem;
     width: 30rem;
@@ -68,8 +69,14 @@
 
 
 @media screen and (max-width: 768px){
-    .t-wrapper{
+
+    .t-wrapper {
+        height: 100vh;
         padding: 0;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        gap: 0rem;
+        text-align: center;
     }
     .testimonial>img{
         width: 70px;
