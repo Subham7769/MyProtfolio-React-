@@ -6,7 +6,7 @@
     border-radius: 1rem;
     align-items:center;
     height: 4.5rem;
-    padding: 0px 1rem 0px 0px;
+    padding: 0px 1.8rem 0px 0px;
     color: var(--text);
 }
 
@@ -31,7 +31,7 @@
 @media screen and (max-width: 768px) {
     .floatingdiv{
         height: 3.5rem;
-        padding: 0px 1rem 0px 0px;
+        padding: 0px 0.5rem 0px 0px;
         color: var(--text);
     }
     
@@ -46,7 +46,7 @@
 
     .FloatingDivUpper{
         top: -4%;
-        left: 75%;
+        left: 78%;
     }
     .FloatingDivLower{
         top: 18rem;
