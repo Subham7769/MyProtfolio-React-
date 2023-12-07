@@ -1,9 +1,11 @@
 import React from 'react'
 import './Experience.css'
+import { Element } from 'react-scroll'
+
 
 const Experience = () => {
   return (
-    <div className='experience'>
+    <Element className='experience' name='experience'>
         <div className="achievement">
             <div className="circle">8+</div>
             <span>Years</span>
@@ -19,7 +21,7 @@ const Experience = () => {
             <span>Certifications</span>
             <span>Completed</span>
         </div>
-    </div>
+    </Element>
   )
 }
 

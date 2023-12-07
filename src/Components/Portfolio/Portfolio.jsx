@@ -6,10 +6,14 @@ import sidebar from '../../img/sidebar.png'
 import ecommerce from '../../img/ecommerce.png'
 import hoc from '../../img/hoc.png'
 import musicapp from '../../img/musicapp.png'
+import { Element } from 'react-scroll'
+
 
 const Portfolio = () => {
+
+    
   return (
-    <div className="portfolio">
+    <Element className="portfolio" name="portfolio">
         <span>Recent Projects</span>
         <span>Portfolio</span>
         
@@ -33,7 +37,7 @@ const Portfolio = () => {
                 <img src={musicapp} alt="" />
             </SwiperSlide>
         </Swiper>
-    </div>
+    </Element>
   )
 }
 

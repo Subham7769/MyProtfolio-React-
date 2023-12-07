@@ -38,3 +38,9 @@ gap: 2rem;
 .n-button{
     flex: 2;
 }
+
+@media screen and (max-width: 768px) {
+    .n-list {
+      display: none;
+    }
+  }

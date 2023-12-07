@@ -6,7 +6,7 @@
     border-radius: 1rem;
     align-items:center;
     height: 4.5rem;
-    padding: 0px 28px 0px 0px;
+    padding: 0px 1.8rem 0px 0px;
     color: var(--text);
 }
 
@@ -17,4 +17,40 @@
 .floatingdiv span{
     font-family: sans-serif;
     font-size: 1rem;
+}
+
+.FloatingDivUpper{
+    top: -4%;
+    left: 68%;
+}
+.FloatingDivLower{
+    top: 18rem;
+    left: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+    .floatingdiv{
+        height: 3.5rem;
+        padding: 0px 1rem 0px 0px;
+        color: var(--text);
+    }
+    
+    .floatingdiv img{
+        transform: scale(0.3);
+    }
+    
+    .floatingdiv span{
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+
+    .FloatingDivUpper{
+        top: -4%;
+        left: 75%;
+    }
+    .FloatingDivLower{
+        top: 18rem;
+        left: 0rem;
+    }
+    
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import './Contact.css'
 import { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Element } from 'react-scroll'
+
 
 export const ContactUs = () => {
     const [success, setSuccess] = useState(false);
@@ -23,7 +25,7 @@ export const ContactUs = () => {
   
 
   return (
-    <div className='contact-form'>
+    <Element className='contact-form' name='contact'>
          {/* left side */}
          <div className="c-left">
             <div className="awesome">
@@ -46,7 +48,7 @@ export const ContactUs = () => {
                 <div className="blur" style={{backgroundColor:'var(--purple)',left:'6%',top:'10%'}}></div>
             </form>
         </div>
-    </div>
+    </Element>
   )
 }
 

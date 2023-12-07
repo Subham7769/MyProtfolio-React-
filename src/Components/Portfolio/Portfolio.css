@@ -36,3 +36,14 @@ width: 19rem;
 filter: drop-shadow(12px 15px 13px rgba(0, 0, 0, 0.25));
 border-radius: 1.3rem;
 }
+
+@media screen and (max-width: 768px) {
+    .portfolio{
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+    }
+}

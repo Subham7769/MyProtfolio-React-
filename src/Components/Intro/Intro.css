@@ -78,3 +78,42 @@
     border-radius: 50%;
     padding: 0;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .intro {
+      flex-direction: column;
+      gap: 0rem;
+      height: 50rem;
+      margin-top: 1rem;
+    }
+    .i-left{
+        text-align: center;
+        flex: 1;
+        gap: 2rem;
+        order: 2;
+    }
+    .i-name>:nth-child(3){
+        text-align: justify;
+    }
+
+    .i-button{
+        align-self: center;
+    }
+    .i-icons{
+        align-self: center;
+        margin-top: 0rem;
+    }
+    .i-right {
+      transform: scale(0.8);
+      left: -3rem;
+    }
+    .i-right .blur {
+      display: none;
+    }
+    .floating-div:nth-of-type(1){
+      /* display: none; */
+      top: -7rem !important;;
+    }
+  }

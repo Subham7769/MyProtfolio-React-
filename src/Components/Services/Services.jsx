@@ -5,12 +5,13 @@ import glasses from '../../img/glasses.png'
 import humble from '../../img/humble.png'
 import Card from '../Cards/Card'
 import Resume from './Subham-Jain-Resume.pdf'
+import { Element } from 'react-scroll'
 
 
 
 const Services = () => {
   return (
-    <div className='services'>
+    <Element className='services' name='services' >
         {/* left side */}
         <div className="awesome">
             <span>My Awesome</span>
@@ -50,7 +51,7 @@ const Services = () => {
         
         {/* blur divs */}
         <div className="blur" style={{background:'#C1F5FF',left:'-18rem',top:'15rem'}}></div>
-    </div>
+    </Element>
   )
 }
 

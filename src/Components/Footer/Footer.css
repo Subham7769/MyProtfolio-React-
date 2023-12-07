@@ -20,3 +20,9 @@
 display: flex;
 gap: 3rem;
 }
+
+@media screen and (max-width: 768px){
+    .f-content{
+      transform: scale(.5);
+    }
+  }

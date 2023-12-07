@@ -8,6 +8,8 @@ import profilePic1 from '../../img/profile1.jpg'
 import profilePic2 from '../../img/profile2.jpg'
 import profilePic3 from '../../img/profile3.jpg'
 import profilePic4 from '../../img/profile4.jpg'
+import { Element } from 'react-scroll'
+
 
 
 
@@ -38,7 +40,7 @@ const Testimonial = () => {
 
 
   return (
-    <div className="t-wrapper">
+    <Element className="t-wrapper" name='testimonial'>
         <div className="t-heading">
             <span>Clients Always get </span>
             <span>Exceptional Work</span>
@@ -76,7 +78,7 @@ const Testimonial = () => {
 
           
         </Swiper>
-    </div>
+    </Element>
   )
 }
 

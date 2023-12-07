@@ -1,14 +1,19 @@
-.work{
-    padding: 0 3rem;
+.work {
+    padding: 0 3rem 0 3rem;
     display: flex;
     height: 90vh;
     position: relative;
 }
-.w-right{
+
+.w-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     position: relative;
 }
-.w-mainCircle{
+
+.w-mainCircle {
     left: 9rem;
     top: 2rem;
     position: relative;
@@ -18,30 +23,37 @@
     box-shadow: var(--smboxShadow);
     background-color: white;
 }
-.w-mainCircle>*{
-position: absolute;
+
+.w-mainCircle>* {
+    position: absolute;
 }
-.w-mainCircle> :nth-child(1){
-    top:-3rem;
-    left:6rem;
+
+.w-mainCircle> :nth-child(1) {
+    top: -3rem;
+    left: 6rem;
 }
-.w-mainCircle> :nth-child(2){
-    top:5rem;
-    left:-3rem;
+
+.w-mainCircle> :nth-child(2) {
+    top: 5rem;
+    left: -3rem;
 }
-.w-mainCircle> :nth-child(3){
-    top:5rem;
-    left:6rem;
+
+.w-mainCircle> :nth-child(3) {
+    top: 5rem;
+    left: 6rem;
 }
-.w-mainCircle> :nth-child(4){
-    top:5rem;
-    left:15rem;
+
+.w-mainCircle> :nth-child(4) {
+    top: 5rem;
+    left: 15rem;
 }
-.w-mainCircle> :nth-child(5){
-    top:13rem;
-    left:6rem;
+
+.w-mainCircle> :nth-child(5) {
+    top: 13rem;
+    left: 6rem;
 }
-.w-secCircle{
+
+.w-secCircle {
     width: 6rem;
     height: 6rem;
     position: absolute;
@@ -50,26 +62,58 @@ position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:white;
+    background: white;
     box-shadow: var(--smboxShadow);
 }
-.w-secCircle>img{
+
+.w-secCircle>img {
     transform: scale(0.6);
 }
-.w-backCircle{
+
+.w-backCircle {
     position: absolute;
     height: 13rem;
     width: 13rem;
     border-radius: 100%;
     z-index: -1;
 }
-.blueCircle{
+
+.blueCircle {
     background-color: blue;
-    left:18rem;
-    top:0rem;
+    left: 18rem;
+    top: 0rem;
 }
-.yellowCircle{
+
+.yellowCircle {
     background-color: var(--yellow);
-    left:18rem;
-    top:8rem;
+    left: 18rem;
+    top: 8rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .work {
+        margin-top: 3rem;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .w-right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.7);
+    }
+
+    .w-mainCircle {
+        position: static;
+    }
+
+    .w-backCircle {
+        left: 8rem !important;
+    }
+
 }
