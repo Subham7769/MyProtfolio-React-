@@ -85,7 +85,7 @@
     .intro {
       flex-direction: column;
       gap: 0rem;
-      height: 100vh;
+      height: 150vh;
       margin-top: 1rem;
     }
     .i-left{

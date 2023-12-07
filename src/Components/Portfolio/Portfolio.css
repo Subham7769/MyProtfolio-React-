@@ -1,5 +1,4 @@
 .portfolio{
-    border: 1PX SOLID RED;
     display: flex;
     align-items: center;
     flex-direction: column;
