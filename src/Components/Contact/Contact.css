@@ -1,7 +1,9 @@
 .contact-form{
     padding: 0 3rem 0 3rem;
     display: flex;
-    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
     margin-top: 4rem;
       /* scroll */
 }
@@ -48,7 +50,7 @@ textarea{
         padding: 0;
         flex-direction: column;
         gap: 1rem;
-        height: 100vh;
+        height: 70vh;
         margin-top: 0;
     margin-bottom: 6rem;
 

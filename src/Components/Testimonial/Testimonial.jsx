@@ -42,9 +42,9 @@ const Testimonial = () => {
   return (
     <Element className="t-wrapper" name='testimonial'>
         <div className="t-heading">
-            <span>Clients Always get </span>
+            <span>Feedback of </span>
             <span>Exceptional Work</span>
-            <span> from me...</span>
+            <span> for me...</span>
             
             {/* blur divs */}
         <div className="blur" style={{background:'var(--purple)',left:'6%',top:'10%'}}></div>

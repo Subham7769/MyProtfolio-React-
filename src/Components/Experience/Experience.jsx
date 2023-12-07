@@ -7,14 +7,14 @@ const Experience = () => {
   return (
     <Element className='experience' name='experience'>
         <div className="achievement">
-            <div className="circle">8+</div>
-            <span>Years</span>
-            <span>Experience</span>
+            <div className="circle">1</div>
+            <span>Internship</span>
+            <span>Completed</span>
         </div>
         <div className="achievement">
-            <div className="circle">80+</div>
-            <span>Completed</span>
+            <div className="circle">30+</div>
             <span>Projects</span>
+            <span>Completed</span>
         </div>
         <div className="achievement">
             <div className="circle">12+</div>

@@ -9,7 +9,7 @@
     border-radius: 1.5rem;
     padding: 0rem 1.8rem 2rem 1.8rem;
     width: 10rem;
-    height: 13rem;
+    height: fit-content;
     position: absolute;
     background: var(--cardBg);
     box-shadow: var(--boxShadow);

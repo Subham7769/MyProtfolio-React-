@@ -12,6 +12,7 @@ import { Element } from 'react-scroll'
 const Portfolio = () => {
 
     
+    
   return (
     <Element className="portfolio" name="portfolio">
         <span>Recent Projects</span>
@@ -21,20 +22,20 @@ const Portfolio = () => {
         {/* slider */}
         <Swiper
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={2}
         grabCursor={true}
         className='portfolio-slider'>
             <SwiperSlide>
-                <img src={sidebar} alt="" />
+                <a href=""><img src={sidebar} alt="" /></a>
             </SwiperSlide>
             <SwiperSlide>
-                <img src={ecommerce} alt="" />
+                <a href=""><img src={ecommerce} alt="" /></a>
             </SwiperSlide>
             <SwiperSlide>
-                <img src={hoc} alt="" />
+                <a href=""><img src={hoc} alt="" /></a>
             </SwiperSlide>
             <SwiperSlide>
-                <img src={musicapp} alt="" />
+                <a href=""><img src={musicapp} alt="" /></a>
             </SwiperSlide>
         </Swiper>
     </Element>

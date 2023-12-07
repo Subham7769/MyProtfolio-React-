@@ -44,10 +44,10 @@ const Intro = () => {
             <img src={boy} alt="" />
             <img src={glassesimoji} alt="" />
             <div className='FloatingDivUpper'>
-                <FloatingDiv img={Crown} txt1='Web' txt2='Developer'/>
+                <FloatingDiv img={Crown} txt1='Frontend' txt2='Developer'/>
             </div>
             <div className='FloatingDivLower'>
-                <FloatingDiv img={thumbup} txt1='Best Design' txt2='Award'/>
+                <FloatingDiv img={thumbup} txt1='Outstanding' txt2='Results'/>
             </div>
         {/* blur divs */}
         <div className="blur" style={{background:'#edd0ff',left:'56%',top:'-18%'}}></div>

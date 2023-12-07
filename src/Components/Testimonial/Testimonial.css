@@ -6,7 +6,7 @@
     height: 100vh;
     position: relative;
     padding: 0 3rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
     gap: 2rem;
 }
 .t-heading{
@@ -32,7 +32,7 @@
     justify-content: space-evenly;
     padding: 2rem;
     width: 30rem;
-    height: 12rem;
+    height: 70%;
     flex-direction: column;
     background: var(--cardBg);
     border: 0.5rem solid var(--blueCard);
