@@ -21,13 +21,13 @@ const Testimonial = () => {
             img: profilePic1,
             profile:"SDE @Microsoft",
             review:
-              "Outstanding job! The webpage exhibits excellent responsiveness, and the implementation of the scrollable product card section is spot on. The header is visually appealing, contributing to an overall great outcome. The design aligns perfectly with the specifications outlined in Figma, showcasing your precise and accurate implementation of every detail.",
+              "Great job! The webpage is highly responsive, with a perfect scrollable product card section and visually appealing header. Design aligns precisely with Figma specs, demonstrating your precise implementation of every detail.",
           },
           {
             img: profilePic2,
             profile:"Fronted Developer @Acciojob",
             review:
-              "Excellent work. Webpage is responsive, scrollable product card section is implemented properly. Header looks good. Overall work is great. Design is perfect wrt to figma .You have correctly implemented what you have been taught ---Instructor Ayush",
+              "Impressive webpage! Excellent responsiveness, spot-on scrollable product cards, and a visually appealing header contribute to a great outcome. Design aligns perfectly with Figma specs, showcasing precise implementation of every detail. Great job!",
           },
           {
             img: profilePic3,
@@ -45,7 +45,7 @@ const Testimonial = () => {
             img: profilePic5,
             profile:"Frontend Developer @BlackBeltHelp",
             review:
-              "Impressive work on both responsiveness and UI quality, showcasing outstanding commitment and performance. The project excels in adaptability, flawless execution of the product card section, and meticulous adherence to Figma specifications, resulting in an overall impressive outcome",
+              "Impressive work! Outstanding responsiveness, flawless product card execution, and meticulous adherence to Figma specs. Excellent commitment and performance for an impressive outcome.",
           },
     ]
 
