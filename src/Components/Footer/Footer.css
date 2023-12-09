@@ -25,9 +25,24 @@ gap: 3rem;
   align-items: center;
   justify-content: center;
 }
+.Arrow{
+  position: relative;
+  top: 2rem;
+  right: 16rem;
+  border-radius: 100%;
+  transform: scale(0.25);
 
+}
 @media screen and (max-width: 768px){
     .f-content{
       transform: scale(.5);
+    }
+    .Arrow{
+      position: relative;
+      top: 2rem;
+      right: 14rem;
+      border-radius: 100%;
+      transform: scale(0.1);
+    
     }
   }
