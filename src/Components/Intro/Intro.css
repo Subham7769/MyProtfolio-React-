@@ -96,7 +96,7 @@
         gap: 1rem;   
         order: 2;
         height: 100vh;
-        margin-top: -1rem;
+        margin-top: -2.5rem;
     }
     .i-name>:nth-child(3){
         text-align: justify;
