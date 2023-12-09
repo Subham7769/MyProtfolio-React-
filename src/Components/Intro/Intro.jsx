@@ -37,10 +37,14 @@ const Intro = () => {
             </div>
         </div>
         <div className="i-right">
-            <img src={boy} alt="" />
+            <div><img src={boy} alt="" /></div>
+
             <img src={glassesimoji} alt="" />
+
             <FloatingDiv img={Crown} txt1='Frontend' txt2='Developer'/>
+
             <FloatingDiv img={thumbup} txt1='Outstanding' txt2='Results'/>
+
         {/* blur divs */}
         <div className="blur" style={{background:'#edd0ff',left:'56%',top:'-18%'}}></div>
         <div className="blur" style={{background:'#C1F5FF',left:'-9rem',top:'17rem'}}></div>

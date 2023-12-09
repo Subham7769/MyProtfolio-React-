@@ -44,6 +44,9 @@
 }
 
 .i-right{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
     flex: 1;
     position: relative;
 
@@ -52,25 +55,29 @@
 .i-right>*{
     position: absolute;
     z-index: 1;
+
 }
 
-.i-right>:nth-child(1){
-    transform: scale(0.52);
-    left: -35%;
-    top: -68%;
+
+.i-right>:nth-child(1)>img{/* boy */
+    transform: scale(0.55);
+    position: static;
+    margin-top: -18rem;
+    margin-bottom: 4rem;
+    box-sizing: border-box;
 }
-.i-right>:nth-child(2){
+.i-right>:nth-child(2){/* emoji */
     transform: scale(0.62);
     left: -24%;
     top: -19%;
     border-radius: 50%;
     padding: 0;
 }
-.i-right>:nth-child(3){
-    left: 55%;
+.i-right>:nth-child(3){/* frontend */
+    left: 65%;
     top: -8%;
 }
-.i-right>:nth-child(4){
+.i-right>:nth-child(4){/* Outstanding */
     left: 2%;
     top: 63%;
 }
@@ -81,15 +88,15 @@
     .intro {
       flex-direction: column;
       gap: 0rem;
-      height: 115vh;
+      height: auto;
       margin-top: 1rem;
     }
     .i-left{
-        border: 1px solid red;
         text-align: center;
-        flex: 1;
-        gap: 2rem;
+        gap: 1rem;   
         order: 2;
+        height: 100vh;
+        margin-top: -1rem;
     }
     .i-name>:nth-child(3){
         text-align: justify;
@@ -102,22 +109,33 @@
         align-self: center;
         margin-top: 0rem;
     }
+    .i-right{
+        height: auto;
 
-    .i-right>:nth-child(1){
-        transform: scale(0.38);
-        left: -90%;
-        top: -65%;
     }
-
-    .i-right>:nth-child(3){
-        transform: scale(0.8);
-        left: 55%;
+    .i-right>:nth-child(1){/* boy */
+        height: 40vh;
+        transform: scale(0.5);
+        position: static;
+        margin-top: -1rem;
+        margin-bottom: 6rem;
+        box-sizing: border-box;
+        flex-wrap: 0;
+    }
+    .i-right>:nth-child(2){/* emoji */
+        transform: scale(0.4);
+        left: -5rem;
+        top: -4rem;
+    }
+    .i-right>:nth-child(3){/* frontend */
+        transform: scale(0.6);
+        right: -1rem;
         top: -2%;
     }
-    .i-right>:nth-child(4){
-        transform: scale(0.8);
-        left: -10%;
-        top: 63%;
+    .i-right>:nth-child(4){/* Outstanding */
+        transform: scale(0.6);
+        left: -2rem;
+        top: 11.5rem;
     }
     .i-right .blur {
       display: none;
