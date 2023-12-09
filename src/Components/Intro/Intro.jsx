@@ -3,8 +3,6 @@ import './Intro.css'
 import github from '../../img/github.png'
 import instagram from '../../img/instagram.png'
 import linkedin from '../../img/linkedin.png'
-import Vector1 from '../../img/Vector1.png'
-import Vector2 from '../../img/Vector2.png'
 import boy from '../../img/boy.png'
 import thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
@@ -39,16 +37,10 @@ const Intro = () => {
             </div>
         </div>
         <div className="i-right">
-            <img src={Vector1} alt="" />
-            <img src={Vector2} alt="" />
             <img src={boy} alt="" />
             <img src={glassesimoji} alt="" />
-            <div className='FloatingDivUpper'>
-                <FloatingDiv img={Crown} txt1='Frontend' txt2='Developer'/>
-            </div>
-            <div className='FloatingDivLower'>
-                <FloatingDiv img={thumbup} txt1='Outstanding' txt2='Results'/>
-            </div>
+            <FloatingDiv img={Crown} txt1='Frontend' txt2='Developer'/>
+            <FloatingDiv img={thumbup} txt1='Outstanding' txt2='Results'/>
         {/* blur divs */}
         <div className="blur" style={{background:'#edd0ff',left:'56%',top:'-18%'}}></div>
         <div className="blur" style={{background:'#C1F5FF',left:'-9rem',top:'17rem'}}></div>
