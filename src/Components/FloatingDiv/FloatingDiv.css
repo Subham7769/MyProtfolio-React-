@@ -15,7 +15,6 @@
 }
 
 .floatingdiv span{
-    font-family: sans-serif;
     font-size: 0.8rem;
 }
 
@@ -31,7 +30,7 @@
 @media screen and (max-width: 768px) {
     .floatingdiv{
         height: 3rem;
-        padding: 0px 0.4rem 0px 0px;
+        padding: 0px 1rem 0px 0px;
     }
     
     .floatingdiv img{
@@ -44,7 +43,7 @@
     }
 
     .FloatingDivUpper{
-        top: -4%;
+        top: 0%;
         left: 78%;
     }
     .FloatingDivLower{
