@@ -14,4 +14,4 @@ const FloatingDiv = ({img,txt1,txt2}) => {
   )
 }
 
-export default FloatingDiv
+export default FloatingDiv;

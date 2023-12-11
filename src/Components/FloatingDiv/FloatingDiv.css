@@ -1,17 +1,17 @@
 .floatingdiv{
     display: flex;
     background: white;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1rem;
     box-shadow: var(--boxShadow);
     border-radius: 1rem;
     align-items:center;
-    height: 4.5rem;
-    padding: 0px 1.8rem 0px 0px;
+    padding: 1rem;
     color: var(--text);
 }
 
 .floatingdiv img{
-    transform: scale(0.4);
+    width: 2rem;
     margin: 0;
 }
 
@@ -22,13 +22,12 @@
 @media screen and (max-width: 768px) {
     .floatingdiv{
         height: 3rem;
-        padding: 0px .8rem 0px 0px;
+        padding: 0.8rem;
         color: var(--text);
     }
     
     .floatingdiv img{
-        transform: scale(0.3);
-        margin: 0;
+        width: 1.5rem;
     }
     
     .floatingdiv span{
