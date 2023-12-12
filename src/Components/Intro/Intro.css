@@ -129,7 +129,7 @@
     }
     .i-right>:nth-child(3){/* frontend */
         transform: scale(0.6);
-        left: 7.5rem;
+        left: 10rem;
         top: -2%;
     }
     .i-right>:nth-child(4){/* Outstanding */
