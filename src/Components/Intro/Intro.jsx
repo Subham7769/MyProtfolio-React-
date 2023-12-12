@@ -21,7 +21,7 @@ const Intro = () => {
             <div className="i-name">
                 <span>Hi! I Am</span>
                 <span>Subham Jain</span>
-                <span>Passionate frontend developer with expertise in web designing and development. Committed to delivering quality work, I bring creativity and technical proficiency to craft engaging user interfaces.</span>
+                <span>As a trained professional, I bring a dynamic combination of creativity and technical proficiency to frontend development and web design. Committed to delivering high-quality work, I specialize in crafting engaging user interfaces.</span>
             </div>
             <button className='button i-button'><Link to="contact" smooth={true} duration={300}>Hire Me</Link></button>
             <div className="i-icons">

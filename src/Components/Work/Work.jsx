@@ -2,7 +2,7 @@ import React from "react";
 import "./Work.css";
 import microsoft from "../../img/microsoft.png";
 import meta from "../../img/meta.png";
-import fiverr from "../../img/tcs.png";
+import tcs from "../../img/tcs.png";
 import wallmart from "../../img/wallmart.png";
 import acciojob_logo from "../../img/acciojob_logo.png";
 import { Link } from "react-scroll";
@@ -12,7 +12,7 @@ const Work = () => {
     <div className="work">
       {/* left side */}
       <div className="awesome">
-        <span>Learned from</span>
+        <span>Trained By</span>
         <span>India’s Top Instructors</span>
         <span>
           Mastered frontend development with India's top instructors, acquiring
@@ -35,7 +35,7 @@ const Work = () => {
             <img src={meta} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={fiverr} alt="" />
+            <img src={tcs} alt="" />
           </div>
           <div className="w-secCircle">
             <img src={wallmart} alt="" />
