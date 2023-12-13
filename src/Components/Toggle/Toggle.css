@@ -18,3 +18,15 @@
     background: var(--orange);
     position: absolute;
 }
+
+@media screen and (max-width: 768px) {
+    .toggle{
+        border: 2px solid var(--orange);
+        padding: 0.15rem;
+    }
+    .toggle>*{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+}

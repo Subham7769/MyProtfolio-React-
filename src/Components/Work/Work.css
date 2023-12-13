@@ -101,16 +101,45 @@
     .w-right {
         display: flex;
         align-items: flex-start;
-        justify-content: start;
+        justify-content: center;
         transform: scale(0.7);
     }
 
+    .w-backCircle {
+        position: absolute;
+        height: 8rem;
+        width: 8rem;
+        left: 8rem !important;
+    }
     .w-mainCircle {
+        width: 15rem;
+        height: 15rem;
         position: static;
     }
 
-    .w-backCircle {
-        left: 8rem !important;
+    .w-mainCircle> :nth-child(1) {    /* microsoft */
+        top: -3rem;
+        left: 4.5rem;
+    }
+    
+    .w-mainCircle> :nth-child(2) {    /* meta */
+        top: 4.5rem;
+        left: -4rem;
+    }
+    
+    .w-mainCircle> :nth-child(3) {    /* tcs */
+        top: 4.5rem;
+        left: 4.5rem;
+    }
+    
+    .w-mainCircle> :nth-child(4) {    /* wallmart */
+        top: 4.5rem;
+        left: 13rem;
+    }
+    
+    .w-mainCircle> :nth-child(5) {    /* acciojob */
+        top: 12rem;
+        left: 4.5rem;
     }
 
 }

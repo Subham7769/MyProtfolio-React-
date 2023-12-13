@@ -4,7 +4,7 @@ import microsoft from "../../img/microsoft.png";
 import meta from "../../img/meta.png";
 import tcs from "../../img/tcs.png";
 import wallmart from "../../img/wallmart.png";
-import acciojob_logo from "../../img/acciojob_logo.png";
+import acciojob from "../../img/acciojob_logo.png";
 import { Link } from "react-scroll";
 
 const Work = () => {
@@ -41,7 +41,7 @@ const Work = () => {
             <img src={wallmart} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={acciojob_logo} alt="" />
+            <img src={acciojob} alt="" />
           </div>
         </div>
         {/* background circle */}
