@@ -2,7 +2,7 @@ import React from 'react'
 import './Portfolio.css'
 import {Swiper,SwiperSlide} from 'swiper/react';
 import 'swiper/css'
-import portfolio from '../../img/portfolio.png'
+import portfolio from '../../img/portfolio.jpeg'
 import youtube from '../../img/youtube.png'
 import AirBnb from '../../img/AirBnb.png'
 import cookpal from '../../img/cookpal.png'
@@ -23,8 +23,7 @@ const Portfolio = () => {
     <Element className="portfolio" name="portfolio">
         <span>Recent Projects</span>
         <span>Portfolio</span>
-        
-        
+
         {/* slider */}
         <Swiper
         spaceBetween={30}
