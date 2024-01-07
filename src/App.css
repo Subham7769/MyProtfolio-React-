@@ -1,3 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
 :root
 {
   --yellow: #F5C32C;

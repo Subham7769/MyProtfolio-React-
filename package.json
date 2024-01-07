@@ -1,5 +1,5 @@
 {
-  "name": "firstapp",
+  "name": "portfolio2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.1",
+    "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "swiper": "^11.0.5",
@@ -39,18 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Subham7769/MyProtfolio-React-.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Subham7769/MyProtfolio-React-/issues"
-  },
-  "homepage": "https://github.com/Subham7769/MyProtfolio-React-#readme"
+  }
 }
