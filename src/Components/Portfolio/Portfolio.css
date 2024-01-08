@@ -68,13 +68,7 @@
   }
   .live {
     padding: 1.5rem;
-    border-radius: 100%;
-    background-color: rgba(3, 3, 3, 0.471);
-    color: white;
-    text-decoration: none;
-    display: none;
-    position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 30%;
+    left: 32%;
   }
 }
