@@ -34,43 +34,43 @@ const Portfolio = () => {
         grabCursor={true}
         className='portfolio-slider'>
             <SwiperSlide>
-                <a target="_blank" href="https://youtubr-clone-react.vercel.app/"><img src={youtube_react} alt="" /></a>
+                <a target="_blank" href="https://youtubr-clone-react.vercel.app/"><img src={youtube_react} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://image-bazar-infinityscroll.vercel.app/"><img src={Imagebazzar} alt="" /></a>
+                <a target="_blank" href="https://image-bazar-infinityscroll.vercel.app/"><img src={Imagebazzar} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://to-do-list-react-woad-zeta.vercel.app/"><img src={todoreact} alt="" /></a>
+                <a target="_blank" href="https://to-do-list-react-woad-zeta.vercel.app/"><img src={todoreact} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://my-protfolio-react-three.vercel.app/"><img src={portfolio} alt="" /></a>
+                <a target="_blank" href="https://my-protfolio-react-three.vercel.app/"><img src={portfolio} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Youtube-Clone/"><img src={youtube} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Youtube-Clone/"><img src={youtube} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Airbnb-Clone/"><img src={AirBnb} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Airbnb-Clone/"><img src={AirBnb} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Cookpal_Menu_Catalogue/"><img src={cookpal} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Cookpal_Menu_Catalogue/"><img src={cookpal} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Blinkit-clone/"><img src={blinkit} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Blinkit-clone/"><img src={blinkit} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Acciojob-New-Portal/"><img src={acciojob} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Acciojob-New-Portal/"><img src={acciojob} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Otarea/"><img src={Otarea} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Otarea/"><img src={Otarea} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Food-delivery/"><img src={food} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Food-delivery/"><img src={food} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Jira_clone/"><img src={Jira} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Jira_clone/"><img src={Jira} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Spotify_clone/"><img src={Spotify} alt="" /></a>
+                <a target="_blank" href="https://subham7769.github.io/Spotify_clone/"><img src={Spotify} alt="" /><p className='live'>Live</p></a>
             </SwiperSlide>
         </Swiper>
     </Element>
