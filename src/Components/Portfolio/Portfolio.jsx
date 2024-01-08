@@ -12,6 +12,9 @@ import Otarea from '../../img/Otarea.png'
 import food from '../../img/food.png'
 import Jira from '../../img/Jira.png'
 import Spotify from '../../img/Spotify.png'
+import youtube_react from '../../img/youtube_clone_react.png'
+import todoreact from '../../img/todoreact.png'
+import Imagebazzar from '../../img/Imagebazzar.png'
 import { Element } from 'react-scroll'
 
 
@@ -30,6 +33,15 @@ const Portfolio = () => {
         slidesPerView={1}
         grabCursor={true}
         className='portfolio-slider'>
+            <SwiperSlide>
+                <a target="_blank" href="https://youtubr-clone-react.vercel.app/"><img src={youtube_react} alt="" /></a>
+            </SwiperSlide>
+            <SwiperSlide>
+                <a target="_blank" href="https://image-bazar-infinityscroll.vercel.app/"><img src={Imagebazzar} alt="" /></a>
+            </SwiperSlide>
+            <SwiperSlide>
+                <a target="_blank" href="https://to-do-list-react-woad-zeta.vercel.app/"><img src={todoreact} alt="" /></a>
+            </SwiperSlide>
             <SwiperSlide>
                 <a target="_blank" href="https://my-protfolio-react-three.vercel.app/"><img src={portfolio} alt="" /></a>
             </SwiperSlide>
