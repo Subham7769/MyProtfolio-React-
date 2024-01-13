@@ -21,11 +21,10 @@ import { Element } from 'react-scroll'
 const Portfolio = () => {
 
     
-    
   return (
-    <Element className="portfolio" name="portfolio">
+    <Element className="portfolio" name="portfolio" >
         <span>Recent Projects</span>
-        <span>Portfolio</span>
+        <span>Projects</span>
 
         {/* slider */}
         <Swiper

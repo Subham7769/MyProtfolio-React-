@@ -1,7 +1,8 @@
 .work {
     padding: 0 3rem 0 3rem;
     display: flex;
-    height: 90vh;
+    align-items: center;
+    height: 75vh;
     position: relative;
 }
 

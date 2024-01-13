@@ -1,83 +1,89 @@
 import React from 'react'
-import './Portfolio.css'
+import '../Portfolio/Portfolio.css'
 import {Swiper,SwiperSlide} from 'swiper/react';
 import 'swiper/css'
-import portfolio from '../../img/portfolio.jpeg'
-import youtube from '../../img/youtube.png'
-import AirBnb from '../../img/AirBnb.png'
-import cookpal from '../../img/cookpal.png'
-import blinkit from '../../img/blinkit.png'
-import acciojob from '../../img/acciojob.png'
-import Otarea from '../../img/Otarea.png'
-import food from '../../img/food.png'
-import Jira from '../../img/Jira.png'
-import Spotify from '../../img/Spotify.png'
-import youtube_react from '../../img/youtube_clone_react.png'
-import todoreact from '../../img/todoreact.png'
-import Imagebazzar from '../../img/Imagebazzar.png'
+import Atlassian from '../../Assets/Certificate/Agile with Atlassian Jira.png'
+import Meta_HTML from '../../Assets/Certificate/Meta_HTML & CSS in Depth 04.png'
+import Meta_Programmin from '../../Assets/Certificate/Meta_Programmin with javascript 04.png'
+import Meta_React_Basics from '../../Assets/Certificate/Meta_React_Basics 05.png'
+import Meta_Version from '../../Assets/Certificate/Meta_Version Control 03.png'
+import Meta_Introduction from '../../Assets/Certificate/Meta_Introduction to Front-End Development_01.jpeg'
+import Corporate_Telephone from '../../Assets/Certificate/Corporate Telephone Etiquette Batch 07.png'
+import Business_Atiquette from '../../Assets/Certificate/Business_Atiquette.png'
+import SoftSkills from '../../Assets/Certificate/SoftSkills.png'
+import Presentation from '../../Assets/Certificate/Presentation.png'
+import Improve_Interpersonal_Skills from '../../Assets/Certificate/Improve_Interpersonal_Skills.png'
+import Effective_Email_Writting from '../../Assets/Certificate/Effective_Email_Writting.png'
+import Prepare_a_Strong_Resume_and_Cover_Letter_Batch_06 from '../../Assets/Certificate/Prepare_a_Strong_Resume_and_Cover_Letter_Batch_06.png'
+import octanet from '../../Assets/Certificate/octanet Intership.png'
 import { Element } from 'react-scroll'
 
 
-const Portfolio = () => {
+const Certifications = () => {
 
     
     
   return (
-    <Element className="portfolio" name="portfolio">
-        <span>Recent Projects</span>
-        <span>Portfolio</span>
+    <Element className="portfolio" name="portfolio" style={{height:"70vh"}}>
+        <span>Recent</span>
+        <span>Certificates</span>
 
         {/* slider */}
         <Swiper
-        spaceBetween={30}
+        spaceBetween={20}
         slidesPerView={1}
         grabCursor={true}
+        breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 3,
+            }}}
         className='portfolio-slider'>
             <SwiperSlide>
-                <a target="_blank" href="https://youtubr-clone-react.vercel.app/"><img src={youtube_react} alt="" /></a>
+                    <img src={Atlassian} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://image-bazar-infinityscroll.vercel.app/"><img src={Imagebazzar} alt="" /></a>
+                <img src={Meta_React_Basics} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://to-do-list-react-woad-zeta.vercel.app/"><img src={todoreact} alt="" /></a>
+                <img src={Meta_Introduction} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://my-protfolio-react-three.vercel.app/"><img src={portfolio} alt="" /></a>
+                <img src={Meta_Version} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Youtube-Clone/"><img src={youtube} alt="" /></a>
+                <img src={Meta_Programmin} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Airbnb-Clone/"><img src={AirBnb} alt="" /></a>
+                <img src={Meta_HTML} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Cookpal_Menu_Catalogue/"><img src={cookpal} alt="" /></a>
+                <img src={Corporate_Telephone} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Blinkit-clone/"><img src={blinkit} alt="" /></a>
+                <img src={Business_Atiquette} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Acciojob-New-Portal/"><img src={acciojob} alt="" /></a>
+                <img src={SoftSkills} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Otarea/"><img src={Otarea} alt="" /></a>
+               <img src={Presentation} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Food-delivery/"><img src={food} alt="" /></a>
+                <img src={Improve_Interpersonal_Skills} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Jira_clone/"><img src={Jira} alt="" /></a>
+                <img src={Effective_Email_Writting} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <a target="_blank" href="https://subham7769.github.io/Spotify_clone/"><img src={Spotify} alt="" /></a>
+                <img src={octanet} alt="" />
             </SwiperSlide>
         </Swiper>
     </Element>
   )
 }
 
-export default Portfolio
+export default Certifications
 
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Work.css";
+import "./Training.css";
 import microsoft from "../../img/microsoft.png";
 import meta from "../../img/meta.png";
 import tcs from "../../img/tcs.png";

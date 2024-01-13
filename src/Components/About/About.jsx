@@ -16,20 +16,23 @@ const About = () => {
         <span>Subham</span>
         <span>
           Engaged in intensive skill development at Acciojob, Gurugram,
-          maintaining a GPA of 9.5. Graduated from GLA University, Mathura, with
-          a Bachelor's in Computer Applications, earning a GPA of 8.47.
+          maintaining a GPA of <b>9.5</b>. Graduated from GLA University, Mathura, with
+          a Bachelor's in Computer Applications, earning a GPA of <b>8.47</b>.
         </span>
+        <span>20+ Contests with Avg Score of <b>96%</b></span>
+        <span>30+ Project Development with Avg Score of <b>97%</b></span>
+        <span>15+ Certifications with Avg Score of <b>94%</b></span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
       </div>
       {/* right side */}
       <div className="cards">
-        <div style={{ left: "14rem" }}>
+        <div style={{ left: "14rem", top:"-2rem" }}>
           <Card
             emoji={heartemoji}
             heading={"Tools"}
-            detail={"Visual Studio Code, Github, Vercel, Figma, Git, Postman"}
+            detail={"Visual Studio Code, Github, Vercel, Figma, Git, Postman, Jira"}
           />
         </div>
 
@@ -37,11 +40,11 @@ const About = () => {
           <Card
             emoji={glasses}
             heading={"Developer"}
-            detail={"HTML, CSS, JavaScript, ReactJS, Java, JSON, APIs"}
+            detail={"HTML, CSS, JavaScript, ReactJS, Java, JSON, Redux, Redux Toolkit, RESTful API"}
           />
         </div>
 
-        <div style={{ top: "19rem", left: "12rem" }}>
+        <div style={{ top: "17rem", left: "12rem" }}>
           <Card
             emoji={humble}
             heading={"Concepts"}

@@ -33,6 +33,9 @@ gap: 3rem;
   transform: scale(0.25);
 
 }
+.heart{
+  margin: 0 0.5rem ;
+}
 @media screen and (max-width: 768px){
     .f-content{
       transform: scale(.5);
