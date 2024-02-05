@@ -6,22 +6,35 @@ import tcs from "../../img/tcs.png";
 import wallmart from "../../img/wallmart.png";
 import acciojob from "../../img/acciojob_logo.png";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Work = () => {
+  const animationProps = {
+    initial: { opacity: 0, x: 500 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 1.5 },
+  };
   return (
     <div className="work">
       {/* left side */}
       <div className="awesome">
-        <span>Trained By</span>
-        <span>India’s Top Instructors</span>
-        <span>
+        <motion.span
+        {...animationProps} transition={{ delay: 0.1 }}
+        >Trained By</motion.span>
+        <motion.span
+        {...animationProps} transition={{ delay: 0.2 }}
+        >India’s Top Instructors</motion.span>
+        <motion.span
+        {...animationProps} transition={{ delay: 0.3 }}
+        >
           Mastered frontend development with India's top instructors, acquiring
           hands-on skills for impactful web solutions. <br/>Now equipped to craft
           compelling digital experiences with cutting-edge expertise.
-        </span>
-        <Link to="contact" smooth={true} duration={300}><button className="button s-button">
+        </motion.span>
+        <Link to="contact" smooth={true} duration={300}>
+          <motion.button {...animationProps} transition={{ delay: 0.4 }} className="button s-button">
             Hire Me
-        </button>
+        </motion.button>
           </Link>
       </div>
 
