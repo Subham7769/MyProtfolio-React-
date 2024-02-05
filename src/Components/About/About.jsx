@@ -6,45 +6,113 @@ import humble from "../../img/humble.png";
 import Card from "../Cards/Card";
 import Resume from "./Subham-Jain-Resume.pdf";
 import { Element } from "react-scroll";
+import { motion } from "framer-motion";
 
 const About = () => {
+  //common properties
+  const animationProps = {
+    initial: { opacity: 0, x: 500 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 1 },
+  };
+
+  // const animationInfinity = {
+  //   initial: { opacity: 0 },
+  //   transition: {
+  //     type: "smooth",
+  //     repeatType: "mirror",
+  //     duration: 2,
+  //     repeat: Infinity,
+  //   },
+  // };
+
   return (
     <Element className="services" name="about">
       {/* left side */}
       <div className="awesome">
-        <span>About</span>
-        <span>Subham</span>
-        <span>
+        <motion.span {...animationProps} transition={{ delay: 0.1 }}>
+          About
+        </motion.span>
+        <motion.span {...animationProps} transition={{ delay: 0.2 }}>
+          Subham
+        </motion.span>
+        <motion.span {...animationProps} transition={{ delay: 0.3 }}>
           Engaged in intensive skill development at Acciojob, Gurugram,
-          maintaining a GPA of <b>9.5</b>. Graduated from GLA University, Mathura, with
-          a Bachelor's in Computer Applications, earning a GPA of <b>8.47</b>.
-        </span>
-        <span>20+ Contests with Avg Score of <b>96%</b></span>
-        <span>30+ Project Development with Avg Score of <b>97%</b></span>
-        <span>15+ Certifications with Avg Score of <b>94%</b></span>
-        <a href={Resume} download>
+          maintaining a GPA of <b>9.5</b>. Graduated from GLA University,
+          Mathura, with a Bachelor's in Computer Applications, earning a GPA of{" "}
+          <b>8.47</b>.
+        </motion.span>
+        <motion.span {...animationProps} transition={{ delay: 0.4 }}>
+          20+ Contests with Avg Score of <b>96%</b>
+        </motion.span>
+        <motion.span {...animationProps} transition={{ delay: 0.5 }}>
+          30+ Project Development with Avg Score of <b>97%</b>
+        </motion.span>
+        <motion.span {...animationProps} transition={{ delay: 0.6 }}>
+          15+ Certifications with Avg Score of <b>94%</b>
+        </motion.span>
+        <motion.a
+          {...animationProps}
+          transition={{ delay: 0.7 }}
+          href={Resume}
+          download
+        >
           <button className="button s-button">Download CV</button>
-        </a>
+        </motion.a>
       </div>
       {/* right side */}
       <div className="cards">
-        <div style={{ left: "14rem", top:"-2rem" }}>
+        <motion.div
+          initial={{ y: -20 }}
+          animate={{ y: 20 }}
+          transition={{
+            type: "smooth",
+            repeatType: "mirror",
+            duration: 1.5,
+            repeat: Infinity,
+          }}
+          style={{ left: "14rem", top: "-2rem" }}
+        >
           <Card
             emoji={heartemoji}
             heading={"Tools"}
-            detail={"Visual Studio Code, Github, Vercel, Figma, Git, Postman, Jira"}
+            detail={
+              "Visual Studio Code, Github, Vercel, Figma, Git, Postman, Jira"
+            }
           />
-        </div>
+        </motion.div>
 
-        <div style={{ top: "12rem", left: "-4rem" }}>
+        <motion.div
+          initial={{ y: -20 }}
+          animate={{ y: 20 }}
+          transition={{
+            type: "smooth",
+            repeatType: "mirror",
+            duration: 2,
+            repeat: Infinity,
+          }}
+          style={{ top: "12rem", left: "-4rem" }}
+        >
           <Card
             emoji={glasses}
             heading={"Developer"}
-            detail={"HTML, CSS, JavaScript, ReactJS, Java, JSON, Redux, Redux Toolkit, RESTful API"}
+            detail={
+              "HTML, CSS, JavaScript, ReactJS, Java, JSON, Redux Toolkit, RESTful API"
+            }
           />
-        </div>
+        </motion.div>
 
-        <div style={{ top: "17rem", left: "12rem" }}>
+        <motion.div
+          initial={{ y: -20 }}
+          animate={{ y: 20 }}
+          transition={{
+            type: "smooth",
+            repeatType: "mirror",
+            duration: 2.5,
+            repeat: Infinity,
+          }}
+          style={{ top: "17rem", left: "12rem" }}
+        >
           <Card
             emoji={humble}
             heading={"Concepts"}
@@ -52,7 +120,7 @@ const About = () => {
               "Agile Methodologies, Responsive Design, Test Driven Development, Cross-Browser Compatibility"
             }
           />
-        </div>
+        </motion.div>
 
         {/* blur divs */}
         <div
