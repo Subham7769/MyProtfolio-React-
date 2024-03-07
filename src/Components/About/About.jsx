@@ -11,9 +11,15 @@ import { motion } from "framer-motion";
 const About = () => {
   //common properties
   const animationProps = {
-    initial: { opacity: 0, x: 500 },
     animate: { opacity: 1, x: 0 },
-    transition: { duration: 1 },
+    transition: { duration: 1.5 },
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: true },
+    variants: {
+      visible: { opacity: 1, scale: 1 },
+      hidden: { opacity: 0, scale: 0 },
+    },
   };
 
   // const animationInfinity = {

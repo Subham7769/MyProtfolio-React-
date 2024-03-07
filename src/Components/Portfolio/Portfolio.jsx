@@ -106,30 +106,33 @@ const projects = [
   },
 ];
 
-const Portfolio = () => {
-  return (
-    <Element className="portfolio" name="portfolio">
-      <span>Recent Projects</span>
-      <span>Projects</span>
+export const Portfolio = () => (
+  <Element className="portfolio" name="portfolio">
+    <span>Recent Projects</span>
+    <span>Projects</span>
 
-      {/* slider */}
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={1}
-        grabCursor={true}
-        className="portfolio-slider"
-      >
-        {projects.map((project) => (
-          <SwiperSlide key={project.name}>
-            <a target="_blank" href={project.link}>
-              <img src={project.image} alt={project.name} />
-              <p className="live">Live</p>
-            </a>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </Element>
-  );
-};
+    {/* slider */}
+    <Swiper
+      spaceBetween={30}
+      slidesPerView={1}
+      grabCursor={true}
+      className="portfolio-slider"
+      navigation={{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }}
+    >
+      {projects.map((project) => (
+        <SwiperSlide key={project.name}>
+          <a target="_blank" href={project.link}>
+            <img src={project.image} alt={project.name} />
+            <p className="live">Live</p>
+          </a>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+
+  </Element>
+)
 
 export default Portfolio;

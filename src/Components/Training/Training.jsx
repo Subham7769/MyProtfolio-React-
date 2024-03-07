@@ -10,32 +10,39 @@ import { motion } from "framer-motion";
 
 const Work = () => {
   const animationProps = {
-    initial: { opacity: 0, x: 500 },
     animate: { opacity: 1, x: 0 },
     transition: { duration: 1.5 },
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: true },
+    variants: {
+      visible: { opacity: 1, scale: 1 },
+      hidden: { opacity: 0, scale: 0 },
+    },
   };
   return (
     <div className="work">
       {/* left side */}
       <div className="awesome">
-        <motion.span
-        {...animationProps} transition={{ delay: 0.1 }}
-        >Trained By</motion.span>
-        <motion.span
-        {...animationProps} transition={{ delay: 0.2 }}
-        >India’s Top Instructors</motion.span>
-        <motion.span
-        {...animationProps} transition={{ delay: 0.3 }}
-        >
+        <motion.span {...animationProps}  transition={{ delay: 0.2 }}>Trained By</motion.span>
+        <motion.span {...animationProps} transition={{ delay: 0.2 }}>
+          India’s Top Instructors
+        </motion.span>
+        <motion.span {...animationProps} transition={{ delay: 0.3 }}>
           Mastered frontend development with India's top instructors, acquiring
-          hands-on skills for impactful web solutions. <br/>Now equipped to craft
-          compelling digital experiences with cutting-edge expertise.
+          hands-on skills for impactful web solutions. <br />
+          Now equipped to craft compelling digital experiences with cutting-edge
+          expertise.
         </motion.span>
         <Link to="contact" smooth={true} duration={300}>
-          <motion.button {...animationProps} transition={{ delay: 0.4 }} className="button s-button">
+          <motion.button
+            {...animationProps}
+            transition={{ delay: 0.4 }}
+            className="button s-button"
+          >
             Hire Me
-        </motion.button>
-          </Link>
+          </motion.button>
+        </Link>
       </div>
 
       {/* right side */}

@@ -78,6 +78,7 @@ const Intro = () => {
           <img src={boy} alt="" />
         </motion.div>
 
+        
         <motion.img
           initial={{ opacity: 0, y: -500 }}
           animate={{ opacity: 1, y: 0 }}
